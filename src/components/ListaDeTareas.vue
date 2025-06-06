@@ -9,6 +9,10 @@
     newTask.value = '';
   }
 
+  const removeTask = (idx) => {
+    tareas.value.splice(idx, 1);
+  }
+
 </script>
 
 <template>
@@ -17,7 +21,9 @@
     <input type="text" v-model="newTask" @keyup.enter="addTask">
     <ul>
       <li v-for="(tarea, idx) in tareas" :key="idx">
-        {{tarea}}</li>
+        {{tarea}}
+        <button @click="removeTask">X</button>
+      </li>
     </ul>
   </div>
 </template>
