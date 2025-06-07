@@ -33,3 +33,4 @@ coverage
 .gitattributes
 .editorconfig
 package-lock.json
+/src/.zshrc

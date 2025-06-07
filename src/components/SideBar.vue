@@ -16,6 +16,11 @@
           Tareas
         </router-link>
       </li>
+       <li>
+        <router-link to="/registrar">
+          registrar
+        </router-link>
+      </li>
     </ul>
 
 

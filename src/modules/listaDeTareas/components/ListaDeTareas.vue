@@ -5,8 +5,10 @@
   const newTask = ref('');
 
   const addTask = () => {
-    tareas.value.push(newTask.value);
-    newTask.value = '';
+    if(newTask.value.trim() !== ''){
+      tareas.value.push(newTask.value);
+      newTask.value = '';
+    }
   }
 
   const removeTask = (idx) => {
