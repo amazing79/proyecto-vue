@@ -4,7 +4,7 @@
 
 <template>
   <div class="header">
-    <h3>La temperatura actual es: <WeatherApi></WeatherApi></h3>
+     <WeatherApi></WeatherApi>
   </div>
   
 </template>
@@ -21,9 +21,5 @@
     left: 0;
     background-color: #333;
     color: #fafafa;
-  }
-
-  h3{
-    margin:  0;
   }
 </style>
