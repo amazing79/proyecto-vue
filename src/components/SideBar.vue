@@ -12,6 +12,11 @@
     <h3>Email: {{ registrarStore.email }}</h3>
     <ul>
       <li>
+        <router-link to="/agenda">
+        Agenda
+        </router-link>
+      </li>
+      <li>
         <router-link to="/contador">
         Contador
         </router-link>
