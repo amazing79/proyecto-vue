@@ -7,7 +7,7 @@ import { getAllContacts } from '@/helpers/apiContacts';
 const filteredContacts = ref(getAllContacts());
 const contacts = ref(getAllContacts());
 
-const showKword = (kword) => {
+const findKword = (kword) => {
   if(kword.trim() !== '') {
     filteredContacts.value = contacts.value.filter( item => {
       return item.name.toLocaleLowerCase().includes(kword.toLocaleLowerCase());
@@ -26,7 +26,7 @@ const cleanSearch = () => {
 <template>
   <div class="container__agenda">
     <section class="search-bar">
-      <SearchContacts @filterContact="showKword" @cleanSearch="cleanSearch"></SearchContacts>
+      <SearchContacts @filterContact="findKword" @cleanSearch="cleanSearch"></SearchContacts>
     </section>
     <section class="contact-list">
       <ContanctsList title="Resultados de la busqueda" :data="filteredContacts"></ContanctsList>

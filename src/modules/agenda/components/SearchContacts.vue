@@ -17,7 +17,7 @@
 <template>
   <div class="search">
     <h2>Lista de Contactos</h2>
-    <input type="text" placeholder="Buscar.." v-model="text">
+    <input type="text" placeholder="Buscar.." v-model="text" @keypress="dispatchEvent">
     <button @click="dispatchEvent">Buscar</button>
      <button @click="cleanEvent">Limpiar</button>
   </div>
