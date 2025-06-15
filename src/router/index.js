@@ -24,6 +24,11 @@ const router = createRouter({
        name: 'agenda',
       component: () => import('../modules/agenda/views/AgendaView.vue'),
     },
+    {
+       path: '/dialog',
+       name: 'dialog',
+      component: () => import('../modules/common/DialogView.vue'),
+    },
     // {
     //   path: '/about',
     //   name: 'about',

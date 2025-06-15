@@ -31,6 +31,11 @@
           registrar
         </router-link>
       </li>
+       <li>
+        <router-link to="/dialog">
+          Ver modal
+        </router-link>
+      </li>
     </ul>
   </div>
 </template>
